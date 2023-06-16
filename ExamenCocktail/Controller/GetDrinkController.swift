@@ -25,6 +25,7 @@ class GetDrinkController: UIViewController {
     var categoria : [Drinks] = []
     var stCategory : String = "Cocktail"
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,7 +120,16 @@ extension GetDrinkController: UICollectionViewDelegate,UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DrinkCell", for: indexPath) as! DrinkCell
-                
+               
+        let imageURLString = categoria[indexPath.row].strDrinkThumb
+        UIImage.loadImageFromURL(imageURLString!) { (image) in
+        if let image = image {
+        // La imagen se cargó exitosamente desde la URL
+            cell.imageView.image = image
+        } else {
+            print("error al cargar la imagen")
+        }
+        }
                 //cell.imageView.image = ""
         cell.lblNombre.text = categoria[indexPath.row].strDrink
         cell.lblCategoria.text = categoria[indexPath.row].strCategory
@@ -144,4 +154,26 @@ extension GetDrinkController: UICollectionViewDelegate,UICollectionViewDataSourc
     }
   
     
+}
+
+// MARK: UIImage
+
+extension UIImage {
+static func loadImageFromURL(_ urlString: String, completion: @escaping (UIImage?) -> Void) {
+guard let url = URL(string: urlString) else {
+completion(nil)
+return
+}
+
+URLSession.shared.dataTask(with: url) { (data, response, error) in
+guard let data = data, let image = UIImage(data: data) else {
+completion(nil)
+return
+}
+
+DispatchQueue.main.async {
+completion(image)
+}
+}.resume()
+}
 }
