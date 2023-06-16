@@ -15,6 +15,7 @@
 		334E5C3B2A3CBA2000881114 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E5C3A2A3CBA2000881114 /* Result.swift */; };
 		334E5C3D2A3CBACB00881114 /* DrinkSqliteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E5C3C2A3CBACB00881114 /* DrinkSqliteViewModel.swift */; };
 		E3ECB9C32A3CC72E00A55C7D /* GetFavoritosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECB9C22A3CC72E00A55C7D /* GetFavoritosController.swift */; };
+		E3ECB9C52A3CCB5C00A55C7D /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECB9C42A3CCB5C00A55C7D /* DBManager.swift */; };
 		E3FF347F2A3BECA200AD6597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FF347E2A3BECA200AD6597 /* AppDelegate.swift */; };
 		E3FF34812A3BECA200AD6597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FF34802A3BECA200AD6597 /* SceneDelegate.swift */; };
 		E3FF34862A3BECA200AD6597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FF34842A3BECA200AD6597 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		334E5C3A2A3CBA2000881114 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		334E5C3C2A3CBACB00881114 /* DrinkSqliteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSqliteViewModel.swift; sourceTree = "<group>"; };
 		E3ECB9C22A3CC72E00A55C7D /* GetFavoritosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoritosController.swift; sourceTree = "<group>"; };
+		E3ECB9C42A3CCB5C00A55C7D /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		E3FF347B2A3BECA200AD6597 /* ExamenCocktail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenCocktail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FF347E2A3BECA200AD6597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FF34802A3BECA200AD6597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				E3FF34802A3BECA200AD6597 /* SceneDelegate.swift */,
 				E3FF34872A3BECA400AD6597 /* Assets.xcassets */,
 				E3FF348C2A3BECA400AD6597 /* Info.plist */,
+				E3ECB9C42A3CCB5C00A55C7D /* DBManager.swift */,
 			);
 			path = ExamenCocktail;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				E3FF349A2A3BED9400AD6597 /* DrinkViewModel.swift in Sources */,
 				334E5C3D2A3CBACB00881114 /* DrinkSqliteViewModel.swift in Sources */,
 				E3FF34982A3BED8400AD6597 /* GetDrinkController.swift in Sources */,
+				E3ECB9C52A3CCB5C00A55C7D /* DBManager.swift in Sources */,
 				334E5C362A3C28F500881114 /* DrinkCell.swift in Sources */,
 				334E5C312A3C217B00881114 /* Ingredient.swift in Sources */,
 				334E5C392A3C342F00881114 /* DrinkDetailController.swift in Sources */,
