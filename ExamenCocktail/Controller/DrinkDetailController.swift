@@ -43,6 +43,7 @@ class DrinkDetailController: UIViewController {
     var IdCoctel : Int = 0
     var nombreCoctel : String? = nil
     var categoria : [Drinks] = []
+    var drink = Drinks()
     var stCategory : String = "Cocktail"
     
     
