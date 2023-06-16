@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DrinkCell" id="gTV-IL-0wX" customClass="DrinkCell" customModule="ExamenCocktail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="221" height="229"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="221" height="229"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bKV-bQ-q1F">
+                        <rect key="frame" x="0.0" y="0.0" width="221" height="163"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zy1-hh-UER">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="5Ng-Un-0Ag"/>
+                                    <constraint firstAttribute="height" constant="163" id="s8Y-Ww-3Fs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ej7-5f-E0P">
+                        <rect key="frame" x="0.0" y="163" width="221" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKY-ow-bJU">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-IZ-jkO">
+                                <rect key="frame" x="0.0" y="33" width="221" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bKV-bQ-q1F" secondAttribute="trailing" id="2Vt-FX-NHN"/>
+                <constraint firstItem="Ej7-5f-E0P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IIp-ZR-UEf"/>
+                <constraint firstAttribute="bottom" secondItem="Ej7-5f-E0P" secondAttribute="bottom" id="NcI-yH-0L5"/>
+                <constraint firstItem="bKV-bQ-q1F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NwU-2m-tBt"/>
+                <constraint firstAttribute="trailing" secondItem="Ej7-5f-E0P" secondAttribute="trailing" id="Zbd-1Y-hof"/>
+                <constraint firstAttribute="bottom" secondItem="bKV-bQ-q1F" secondAttribute="bottom" constant="66" id="mtq-b8-2fi"/>
+                <constraint firstItem="bKV-bQ-q1F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sl5-uA-aHx"/>
+                <constraint firstItem="Ej7-5f-E0P" firstAttribute="top" secondItem="bKV-bQ-q1F" secondAttribute="bottom" id="yqp-lV-s74"/>
+            </constraints>
+            <size key="customSize" width="221" height="229"/>
+            <connections>
+                <outlet property="imageView" destination="zy1-hh-UER" id="JMv-Tp-89C"/>
+                <outlet property="lblCategoria" destination="Ohx-IZ-jkO" id="ac7-U7-E4W"/>
+                <outlet property="lblNombre" destination="RKY-ow-bJU" id="ivX-oP-nsy"/>
+            </connections>
+            <point key="canvasLocation" x="167.17557251908397" y="82.74647887323944"/>
+        </collectionViewCell>
+    </objects>
+</document>
