@@ -25,7 +25,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8aQ-Se-q1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1639" y="-42"/>
+            <point key="canvasLocation" x="-2123" y="346"/>
         </scene>
         <!--Drink-->
         <scene sceneID="XAn-1H-3DI">
@@ -42,7 +42,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwn-gr-aOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-891" y="-35"/>
+            <point key="canvasLocation" x="-969" y="-60"/>
         </scene>
         <!--Favoritos-->
         <scene sceneID="wl4-Wh-VGe">
@@ -59,7 +59,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVb-hP-xm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-892" y="659"/>
+            <point key="canvasLocation" x="-970" y="667"/>
         </scene>
         <!--Get Drink Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-34" y="-61"/>
         </scene>
         <!--Drink Detail Controller-->
         <scene sceneID="wfW-w0-8KT">
@@ -312,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Br6-Kc-bTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="55"/>
+            <point key="canvasLocation" x="894" y="-61"/>
         </scene>
         <!--Get Favoritos Controller-->
         <scene sceneID="Sho-Gt-vjN">
@@ -382,11 +382,12 @@
                         <outlet property="btnBuscarOutlet" destination="NM2-1I-eTh" id="faT-UO-7qo"/>
                         <outlet property="collectionViewFavoritos" destination="AAS-L1-mEb" id="eki-45-xtY"/>
                         <outlet property="txtBuscar" destination="Vve-hf-wII" id="sua-tQ-IDb"/>
+                        <segue destination="a6e-ZW-IkT" kind="show" id="gKE-Uq-2yB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJF-3d-zV3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="667"/>
+            <point key="canvasLocation" x="-34" y="667"/>
         </scene>
         <!--Favoritos Detail Controller-->
         <scene sceneID="9dh-TI-4O0">
@@ -397,16 +398,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xlk-o4-eqf">
-                                <rect key="frame" x="25" y="167" width="343" height="196"/>
+                                <rect key="frame" x="25" y="211" width="343" height="103"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yg-Rn-ENW">
-                                <rect key="frame" x="161" y="127" width="71" height="24"/>
+                                <rect key="frame" x="161" y="171" width="71" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8Q9-PI-m6o">
-                                <rect key="frame" x="100" y="363" width="193" height="39"/>
+                                <rect key="frame" x="100" y="314" width="193" height="39"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfN-Fw-wdR">
                                         <rect key="frame" x="0.0" y="0.0" width="193" height="39"/>
@@ -417,7 +418,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FqO-x5-TCt">
-                                <rect key="frame" x="25" y="402" width="163" height="116"/>
+                                <rect key="frame" x="25" y="353" width="163" height="116"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xm4-63-SWM">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="116"/>
@@ -425,7 +426,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r3I-hr-SCP">
-                                <rect key="frame" x="205" y="402" width="163" height="116"/>
+                                <rect key="frame" x="205" y="353" width="163" height="116"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Y9-Vm-fDB">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="116"/>
@@ -433,7 +434,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-00-NBc">
-                                <rect key="frame" x="115" y="700" width="163" height="61.666666666666629"/>
+                                <rect key="frame" x="115" y="651" width="163" height="61.666666666666629"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediente3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiL-IZ-JpW">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="20.333333333333332"/>
@@ -450,7 +451,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kHa-dH-fa1">
-                                <rect key="frame" x="25" y="513" width="163" height="55"/>
+                                <rect key="frame" x="25" y="464" width="163" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediente1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-Kl-6yg">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="27.666666666666668"/>
@@ -459,7 +460,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v93-nf-jEx">
-                                        <rect key="frame" x="0.0" y="27.666666666666629" width="163" height="27.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="27.666666666666686" width="163" height="27.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -467,7 +468,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GyD-Bg-XhN">
-                                <rect key="frame" x="211" y="513" width="157" height="55"/>
+                                <rect key="frame" x="211" y="464" width="157" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediente2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE8-Mm-idG">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="27.666666666666668"/>
@@ -476,7 +477,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxD-ZL-f60">
-                                        <rect key="frame" x="0.0" y="27.666666666666629" width="157" height="27.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="27.666666666666686" width="157" height="27.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -484,7 +485,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="07Z-Rv-tdh">
-                                <rect key="frame" x="115" y="576" width="163" height="116"/>
+                                <rect key="frame" x="115" y="527" width="163" height="116"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ewl-u4-gBw">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="116"/>
@@ -492,7 +493,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alI-3E-HBW">
-                                <rect key="frame" x="293" y="363" width="50.666666666666686" height="39"/>
+                                <rect key="frame" x="293" y="314" width="50.666666666666686" height="39"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
@@ -548,23 +549,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="tWv-Ba-0SY"/>
                     <connections>
-                        <outlet property="btnFavoritosOutlet" destination="alI-3E-HBW" id="nQc-yE-7d6"/>
-                        <outlet property="imageView" destination="xlk-o4-eqf" id="j5A-dZ-gGp"/>
+                        <outlet property="btnFavoritosOutlet" destination="alI-3E-HBW" id="AbP-1n-CSe"/>
+                        <outlet property="imageView" destination="xlk-o4-eqf" id="3Hc-aO-Yaq"/>
                         <outlet property="imageView1" destination="xm4-63-SWM" id="Qjs-sM-Wa0"/>
-                        <outlet property="imageView2" destination="8Y9-Vm-fDB" id="SdH-XS-ycu"/>
-                        <outlet property="imageView3" destination="Ewl-u4-gBw" id="mwQ-4X-4Ds"/>
-                        <outlet property="lblCantidad1" destination="v93-nf-jEx" id="j2q-n1-tz5"/>
-                        <outlet property="lblCantidad2" destination="zxD-ZL-f60" id="U1c-h9-Wyr"/>
-                        <outlet property="lblCantidad3" destination="706-58-vXd" id="UHv-Ze-Y7z"/>
-                        <outlet property="lblIngrediente1" destination="bhd-Kl-6yg" id="owu-Ud-wji"/>
-                        <outlet property="lblIngrediente2" destination="bE8-Mm-idG" id="kCd-k1-GR3"/>
-                        <outlet property="lblIngrediente3" destination="TiL-IZ-JpW" id="8Zx-jA-cWx"/>
-                        <outlet property="lblNombre" destination="ZfN-Fw-wdR" id="cbU-f3-3c3"/>
+                        <outlet property="imageView2" destination="8Y9-Vm-fDB" id="9Dw-wa-2Oo"/>
+                        <outlet property="imageView3" destination="Ewl-u4-gBw" id="9ar-4K-R37"/>
+                        <outlet property="imagenView1" destination="xm4-63-SWM" id="HMd-81-UvE"/>
+                        <outlet property="lblCantidad1" destination="v93-nf-jEx" id="YGG-oN-zLK"/>
+                        <outlet property="lblCantidad2" destination="zxD-ZL-f60" id="wrP-Sk-f98"/>
+                        <outlet property="lblCantidad3" destination="706-58-vXd" id="5eN-1D-vaB"/>
+                        <outlet property="lblIngrediente1" destination="bhd-Kl-6yg" id="Hlu-f9-tqp"/>
+                        <outlet property="lblIngrediente2" destination="bE8-Mm-idG" id="KDS-o4-kzR"/>
+                        <outlet property="lblIngrediente3" destination="TiL-IZ-JpW" id="VpO-PA-SV4"/>
+                        <outlet property="lblNombre" destination="ZfN-Fw-wdR" id="h7Y-te-BaK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXK-KY-6Ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="741"/>
+            <point key="canvasLocation" x="894" y="667"/>
         </scene>
     </scenes>
     <resources>
