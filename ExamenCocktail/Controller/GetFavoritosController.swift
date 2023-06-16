@@ -18,6 +18,14 @@ class GetFavoritosController: UIViewController {
     
     @IBOutlet weak var collectionViewFavoritos: UICollectionView!
     
+    
+    
+    
+    
+    
+    
+    
+    
     var cocteles  : [Int] = []
     var IdCoctel : Int = 0
     var color = UIColor.red.cgColor
@@ -54,7 +62,7 @@ class GetFavoritosController: UIViewController {
        
     }
     override func viewWillAppear(_ animated: Bool) {
-        updateUI()
+      //  updateUI()
     }
     func updateUI(){
         self.categoria.removeAll()
