@@ -132,6 +132,40 @@ class DrinkSqliteViewModel {
         
         return result
     }
+    static func Delete(idCoctel:Int) -> Result
+      {
+          var context = DBManager()
+          var result = Result()
+          let query = "DELETE FROM Drinks WHERE idDrink = \(idCoctel)"
+          var statement: OpaquePointer? = nil
+          do {
+              if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK {
+                  //  sqlite3_bind_int(deleteStatement, 1, Int32(usuario.IdUsuario! as Int))
+                  if try sqlite3_step(statement) == SQLITE_DONE {
+                      print("Producto Eliminado")
+                      result.Correct=true
+                      
+                  } else {
+                      result.ErrorMessage = "Ocurrio un error al eliminar"
+                      result.Correct=false
+                  }
+              } else{
+                  result.Correct = false
+                  result.ErrorMessage = "Ocurrio un error al eliminar"
+              }
+              sqlite3_finalize(statement)
+              
+              sqlite3_close(context.db)
+              
+          }
+          catch let ex {
+              
+              result.Correct=false
+              result.ErrorMessage = ex.localizedDescription
+              result.Ex = ex
+          }
+          return result
+      }
     
     
     

@@ -45,6 +45,22 @@ class FavoritosDetailController: UIViewController {
 
     }
     
+    
+    @IBAction func btnFavoritos(_ sender: UIButton) {
+        
+        var result = DrinkSqliteViewModel.Delete(idCoctel: self.IdCoctel)
+        if result.Correct! == true {
+            //Alert
+            
+            let alert = UIAlertController(title: "Mensaje", message: "Se quito de Favoritos!", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Aceptar", style: .default)
+            alert.addAction(action)
+
+                present(alert, animated: true)
+        }
+        
+    }
+    
     func updateUI(){
       
         var result = DrinkSqliteViewModel.GetbyId(idCoctel: self.IdCoctel)

@@ -499,7 +499,7 @@
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnFavoritos:" destination="a6e-ZW-IkT" eventType="touchUpInside" id="KLM-0Z-2LK"/>
+                                    <action selector="btnFavoritos:" destination="a6e-ZW-IkT" eventType="touchUpInside" id="4Ue-Xu-DIe"/>
                                 </connections>
                             </button>
                         </subviews>
