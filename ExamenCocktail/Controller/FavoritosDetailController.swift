@@ -51,7 +51,8 @@ class FavoritosDetailController: UIViewController {
         var result = DrinkSqliteViewModel.Delete(idCoctel: self.IdCoctel)
         if result.Correct! == true {
             //Alert
-            
+            btnFavoritosOutlet.setImage(UIImage.init(systemName: "heart"), for: .normal)
+          
             let alert = UIAlertController(title: "Mensaje", message: "Se quito de Favoritos!", preferredStyle: .alert)
             let action = UIAlertAction(title: "Aceptar", style: .default)
             alert.addAction(action)
