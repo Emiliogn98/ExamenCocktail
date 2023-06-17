@@ -43,7 +43,7 @@ class DrinkDetailController: UIViewController {
     var IdCoctel : Int = 0
     var nombreCoctel : String? = nil
     var categoria : [Drinks] = []
-    var drink = Drinks()
+    
     var stCategory : String = "Cocktail"
     
     
@@ -60,23 +60,37 @@ class DrinkDetailController: UIViewController {
     @IBAction func btnFavoritos(_ sender: UIButton) {
         self.IdCoctel = Int(self.categoria[0].idDrink!)!
         print(self.IdCoctel)
-//        let result = DrinkSqliteViewModel.Add(IdCoctel)
-//                    if result.Correct! {
-//                        //Alert
-//                        let alert = UIAlertController(title: "Mensaje", message: "Se añadio correctamente a Favoritos!", preferredStyle: .alert)
-//                        let action = UIAlertAction(title: "Aceptar", style: .default)
-//                        alert.addAction(action)
-//
-//                            present(alert, animated: true)
-//                    }else{
-//                        //Alert
-//                        //Alert
-//                        let alert = UIAlertController(title: "Mensaje", message: "Ocurrio un error al agregar a favoritos.", preferredStyle: .alert)
-//                        let action = UIAlertAction(title: "Aceptar", style: .default)
-//                        alert.addAction(action)
-//
-//                            present(alert, animated: true)
-//                    }
+        var drink = Drinks()
+        
+        drink.strCategory = self.categoria[0].strCategory
+        drink.strDrink = self.categoria[0].strDrink
+        drink.strAlcoholic = self.categoria[0].strAlcoholic
+        drink.strMeasure1 = self.categoria[0].strMeasure1
+        drink.strMeasure2 = self.categoria[0].strMeasure2
+        drink.strMeasure3 = self.categoria[0].strMeasure3
+        drink.strIngredient1 = self.categoria[0].strIngredient1
+        drink.strIngredient2 = self.categoria[0].strIngredient2
+        drink.strIngredient3 = self.categoria[0].strIngredient3
+        drink.strDrinkThumb = self.categoria[0].strDrinkThumb
+        print(drink.strDrinkThumb)
+        
+        let result = DrinkSqliteViewModel.Add(drink: drink)
+                    if result.Correct! == true {
+                        //Alert
+                        let alert = UIAlertController(title: "Mensaje", message: "Se añadio correctamente a Favoritos!", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "Aceptar", style: .default)
+                        alert.addAction(action)
+
+                            present(alert, animated: true)
+                    }else{
+                        //Alert
+                        //Alert
+                        let alert = UIAlertController(title: "Mensaje", message: "Ocurrio un error al agregar a favoritos.", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "Aceptar", style: .default)
+                        alert.addAction(action)
+
+                            present(alert, animated: true)
+                    }
                    // carritoViewModel.GetAll()
                 }
     
