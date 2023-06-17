@@ -51,4 +51,88 @@ class DrinkSqliteViewModel {
             return result
 
         }
+    static func GetAll()-> Result{
+            var context = DBManager()
+            var result = Result()
+            let query = "SELECT IdDrink, strDrink, strDrinkThumb, strIngredient1, strIngredient2, strIngredient3, strMeasure1, strMeasure2, strMeasure3  from Drinks"
+            var statement: OpaquePointer? = nil
+            do{
+                
+                if try sqlite3_prepare_v2(context.db, query, -1 , &statement,nil) == SQLITE_OK {
+                    result.Objects = []
+                    while try sqlite3_step(statement) == SQLITE_ROW {
+                        var drink = Drinks()
+                        drink.idDrink = String(describing: String(cString: sqlite3_column_text(statement, 0)))
+                        drink.strDrink = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                        drink.strDrinkThumb = String(describing: String(cString: sqlite3_column_text(statement, 2)))
+                        drink.strIngredient1 = String(describing: String(cString: sqlite3_column_text(statement, 3)))
+                        drink.strIngredient2 = String(describing: String(cString: sqlite3_column_text(statement, 4)))
+                        drink.strIngredient3 = String(describing: String(cString: sqlite3_column_text(statement, 5)))
+                        drink.strMeasure1 = String(describing: String(cString: sqlite3_column_text(statement, 6)))
+                        drink.strMeasure2 = String(describing: String(cString: sqlite3_column_text(statement, 7)))
+                        drink.strMeasure3 = String(describing: String(cString: sqlite3_column_text(statement, 8)))
+                     
+                        
+                        result.Objects?.append(drink)
+                    }
+                    result.Correct = true;
+                }else{
+                    result.Correct = false
+                    result.ErrorMessage = "No hay cocteles que  mostrar"
+                }
+            }catch let ex {
+                result.Correct = false
+                result.ErrorMessage = ex.localizedDescription
+                result.Ex = ex
+            }
+            sqlite3_finalize(statement)
+            sqlite3_close(context.db)
+            return result
+        }
+    
+    static func GetbyId (idCoctel : Int) -> Result {
+        var context = DBManager()
+        var result = Result()
+        let query = "SELECT IdDrink, strDrink, strDrinkThumb, strIngredient1, strIngredient2, strIngredient3, strMeasure1, strMeasure2, strMeasure3 from Drinks where IdDrink = \(idCoctel)"
+        var statement : OpaquePointer?
+        do{
+            if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK{
+                var drink = Drinks()
+                if try (sqlite3_step(statement) == SQLITE_ROW ){
+                 
+                   
+                    drink.idDrink = String(describing: String(cString: sqlite3_column_text(statement, 0)))
+                    drink.strDrink = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                    drink.strDrinkThumb = String(describing: String(cString: sqlite3_column_text(statement, 2)))
+                    drink.strIngredient1 = String(describing: String(cString: sqlite3_column_text(statement, 3)))
+                    drink.strIngredient2 = String(describing: String(cString: sqlite3_column_text(statement, 4)))
+                    drink.strIngredient3 = String(describing: String(cString: sqlite3_column_text(statement, 5)))
+                    drink.strMeasure1 = String(describing: String(cString: sqlite3_column_text(statement, 6)))
+                    drink.strMeasure2 = String(describing: String(cString: sqlite3_column_text(statement, 7)))
+                    drink.strMeasure3 = String(describing: String(cString: sqlite3_column_text(statement, 8)))
+                 
+                    
+                    result.Object = drink
+                    result.Correct = true
+                }
+                else{
+                    result.Correct = false
+                }
+            } else{
+                result.Correct = false
+                result.ErrorMessage = "No hay cocteles"
+            }
+        }catch let ex{
+            result.Correct = false
+            result.ErrorMessage = ex.localizedDescription
+            result.Ex = ex
+        }
+        sqlite3_finalize(statement)
+        sqlite3_close(context.db)
+        
+        return result
+    }
+    
+    
+    
 }

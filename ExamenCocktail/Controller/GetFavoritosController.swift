@@ -22,64 +22,75 @@ class GetFavoritosController: UIViewController {
     
     
     
-    
-    
-    
+
     
     var cocteles  : [Int] = []
     var IdCoctel : Int = 0
     var color = UIColor.red.cgColor
     var color2 = UIColor.white.cgColor
     var nombreCoctel : String? = "a"
-    var categoria : [Drinks] = []
+    var drinks : [Drinks] = []
     var stCategory : String = "Cocktail"
     var dbManager = DBManager()
+    var result = Result()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        dbManager.Get()
+        //        dbManager.Get()
         collectionViewFavoritos.delegate = self
         collectionViewFavoritos.dataSource = self
         collectionViewFavoritos.register(UINib(nibName: "DrinkCell", bundle: .main), forCellWithReuseIdentifier: "DrinkCell")
-
+        updateUI()
+        
     }
     
-
+    
     @IBAction func btnBuscar(_ sender: UIButton) {
         nombreCoctel = txtBuscar.text
-               print(nombreCoctel)
-               guard txtBuscar.text != "" else{
-                          
-                   txtBuscar.layer.borderColor = color
-                   txtBuscar.layer.borderWidth = 1.0
-                          return
-                      }
-               txtBuscar.layer.borderColor = color2
-               txtBuscar.layer.borderWidth = 1.0
-            updateUI()
-       
+        print(nombreCoctel)
+        guard txtBuscar.text != "" else{
+            
+            txtBuscar.layer.borderColor = color
+            txtBuscar.layer.borderWidth = 1.0
+            return
+        }
+        txtBuscar.layer.borderColor = color2
+        txtBuscar.layer.borderWidth = 1.0
+        updateUI()
+        
     }
     override func viewWillAppear(_ animated: Bool) {
-      //  updateUI()
+          updateUI()
     }
     func updateUI(){
-        self.categoria.removeAll()
-
-        DrinkViewModel.GetByName(nombreCoctel: self.nombreCoctel!) { result, error in
-                    DispatchQueue.main.async {
-                        if result!.drinks != nil {
-                            for objCategoria in result!.drinks!{
-                                self.categoria.append(objCategoria)
-                            }
-                            self.collectionViewFavoritos.reloadData()
-                        }
-                    }
-                }
+        self.drinks.removeAll()
+        
+        let result = DrinkSqliteViewModel.GetAll()
+        if result.Correct! == true {
+            for objCoctel in result.Objects! {
+                let drink = objCoctel as! Drinks
+                drinks.append(drink)
             }
-    
-
+            collectionViewFavoritos.reloadData()
+        }
+        
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //controlar que hacer antes de ir a la siguiente vista
+        
+                        if segue.identifier == "DrinkDetailSegue" {
+                            let formControl = segue.destination as! FavoritosDetailController
+                            formControl.IdCoctel = self.IdCoctel
+        
+                        }
+        
+      
+        
+    }
 }
 
 
@@ -90,7 +101,7 @@ extension GetFavoritosController: UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DrinkCell", for: indexPath) as! DrinkCell
                
-        let imageURLString = categoria[indexPath.row].strDrinkThumb
+        let imageURLString = drinks[indexPath.row].strDrinkThumb
         UIImage.loadImageFromURLFavoritos(imageURLString!) { (image) in
             if let image = image {
                 // La imagen se cargó exitosamente desde la URL
@@ -101,8 +112,8 @@ extension GetFavoritosController: UICollectionViewDelegate,UICollectionViewDataS
         }
       
         
-        cell.lblNombre.text = categoria[indexPath.row].strDrink
-        cell.lblCategoria.text = categoria[indexPath.row].strCategory
+        cell.lblNombre.text = drinks[indexPath.row].strDrink
+        cell.lblCategoria.text = drinks[indexPath.row].strCategory
                // print(self.categoria)
          
      
@@ -111,14 +122,14 @@ extension GetFavoritosController: UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.categoria.count
+        return self.drinks.count
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        self.IdCoctel = Int(self.categoria[indexPath.row].idDrink!)!
+        self.IdCoctel = Int(self.drinks[indexPath.row].idDrink!)!
         self.performSegue(withIdentifier: "DrinkDetailSegue", sender: self)
         
     }

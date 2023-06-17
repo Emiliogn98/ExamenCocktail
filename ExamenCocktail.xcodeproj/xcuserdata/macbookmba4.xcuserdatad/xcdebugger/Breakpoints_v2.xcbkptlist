@@ -260,5 +260,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E388FC20-090A-4EBF-86F1-6B72459701BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/ViewModel/DrinkSqliteViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "GetbyId(idCoctel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "663FA55D-3B7B-4E36-9C4D-9494F903FF3B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/Controller/FavoritosDetailController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "updateUI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "663FA55D-3B7B-4E36-9C4D-9494F903FF3B - 68cb0214a5b8db13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.FavoritosDetailController.updateUI() -&gt; ()"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/ExamenCocktail/ExamenCocktail/Controller/FavoritosDetailController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "663FA55D-3B7B-4E36-9C4D-9494F903FF3B - 68cb0214a5b8db72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.FavoritosDetailController.updateUI() -&gt; ()"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/ExamenCocktail/ExamenCocktail/Controller/FavoritosDetailController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5739ACC5-0F4C-4E06-8419-104C5A95BA6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/ViewModel/DrinkSqliteViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "GetbyId(idCoctel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

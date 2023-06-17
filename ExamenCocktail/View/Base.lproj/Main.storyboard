@@ -382,7 +382,7 @@
                         <outlet property="btnBuscarOutlet" destination="NM2-1I-eTh" id="faT-UO-7qo"/>
                         <outlet property="collectionViewFavoritos" destination="AAS-L1-mEb" id="eki-45-xtY"/>
                         <outlet property="txtBuscar" destination="Vve-hf-wII" id="sua-tQ-IDb"/>
-                        <segue destination="a6e-ZW-IkT" kind="show" id="gKE-Uq-2yB"/>
+                        <segue destination="a6e-ZW-IkT" kind="show" identifier="DrinkDetailSegue" id="gKE-Uq-2yB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJF-3d-zV3" sceneMemberID="firstResponder"/>
@@ -551,10 +551,9 @@
                     <connections>
                         <outlet property="btnFavoritosOutlet" destination="alI-3E-HBW" id="AbP-1n-CSe"/>
                         <outlet property="imageView" destination="xlk-o4-eqf" id="3Hc-aO-Yaq"/>
-                        <outlet property="imageView1" destination="xm4-63-SWM" id="Qjs-sM-Wa0"/>
+                        <outlet property="imageView1" destination="xm4-63-SWM" id="HMd-81-UvE"/>
                         <outlet property="imageView2" destination="8Y9-Vm-fDB" id="9Dw-wa-2Oo"/>
                         <outlet property="imageView3" destination="Ewl-u4-gBw" id="9ar-4K-R37"/>
-                        <outlet property="imagenView1" destination="xm4-63-SWM" id="HMd-81-UvE"/>
                         <outlet property="lblCantidad1" destination="v93-nf-jEx" id="YGG-oN-zLK"/>
                         <outlet property="lblCantidad2" destination="zxD-ZL-f60" id="wrP-Sk-f98"/>
                         <outlet property="lblCantidad3" destination="706-58-vXd" id="5eN-1D-vaB"/>
