@@ -17,6 +17,7 @@ public class DBManager {
     init()
     {
         db = Get()
+        createTable()
     
     }
     
@@ -47,6 +48,13 @@ public class DBManager {
             print("conexion existosa el pat: \(filePath)")
             //result.Correct = true
             return db
+        }
+    }
+    func createTable() {
+        let queryTable = "CREATE TABLE IF NOT EXISTS Drinks (idDrink INTEGER NOT NULL,strCategory VARCHAR ,strDrink VARCHAR,strDrinkThumb VARCHAR,strAlcoholic VARCHAR(150),strIngredient1 VARCHAR,strIngredient2 VARCHAR,strIngredient3 VARCHAR,strMeasure1 VARCHAR,strMeasure2 VARCHAR,strMeasure3 VARCHAR,PRIMARY KEY('idDrink' AUTOINCREMENT))"
+        
+        if sqlite3_exec(db,queryTable,nil,nil,nil) != SQLITE_OK {
+         print("ocurrio un error al crear la tabla")
         }
     }
 }
