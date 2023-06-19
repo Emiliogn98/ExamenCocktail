@@ -11,7 +11,7 @@ import SQLite3
 public class DBManager {
     var result = Result()
     
-    let dbPath: String = "Document.DB_Drinks.sqlite"//"DBCocktail.sqlite"
+    let dbPath: String = "DBCocktail.sqlite"
     var db:OpaquePointer?
     
     init()
