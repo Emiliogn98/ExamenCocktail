@@ -14,8 +14,8 @@
             filePath = "ExamenCocktail/DBManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "Get()"
             landmarkType = "7">
             <Locations>
@@ -64,6 +64,36 @@
                   endingLineNumber = "40"
                   offsetFromSymbolStart = "780">
                </Location>
+               <Location
+                  uuid = "03C6ADD6-9750-46FC-8608-149622FB9BB3 - 644e5c29cac760db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DBManager.Get() -&gt; Swift.Optional&lt;Swift.OpaquePointer&gt;"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/DBManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "780">
+               </Location>
+               <Location
+                  uuid = "03C6ADD6-9750-46FC-8608-149622FB9BB3 - 644e5c29cac76019"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DBManager.Get() -&gt; Swift.Optional&lt;Swift.OpaquePointer&gt;"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/DBManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "268">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -77,10 +107,10 @@
             filePath = "ExamenCocktail/DBManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "Get()"
-            landmarkType = "7">
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "DBManager"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "5AB23550-94D3-470B-8648-6DE1D21B34B1 - 644e5c29cac7617c"
@@ -140,6 +170,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
                   endingLineNumber = "30"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "5AB23550-94D3-470B-8648-6DE1D21B34B1 - 644e5c29cac7615f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DBManager.Get() -&gt; Swift.Optional&lt;Swift.OpaquePointer&gt;"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/DBManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
                   offsetFromSymbolStart = "268">
                </Location>
             </Locations>
@@ -206,6 +251,134 @@
             startingLineNumber = "60"
             endingLineNumber = "60"
             landmarkName = "btnFavoritos(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EAE79F30-69FF-473C-969C-9BAD4ADA5B91 - d1cd8789510dfd88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DrinkDetailController.btnFavoritos(__C.UIButton) -&gt; ()"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/Controller/DrinkDetailController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "EAE79F30-69FF-473C-969C-9BAD4ADA5B91 - d1cd8789510dfd88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DrinkDetailController.btnFavoritos(__C.UIButton) -&gt; ()"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/Controller/DrinkDetailController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38376858-2C8D-443D-A6D5-633F4D89920C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/DBManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "createTable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97005312-1492-4C1C-A3F3-E1674E615EFC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/DBManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E3767E1-A307-46B4-8B0B-29F801E8A881"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/Controller/DrinkDetailController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "btnFavoritos(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8E3767E1-A307-46B4-8B0B-29F801E8A881 - d1cd8789510dff5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DrinkDetailController.btnFavoritos(__C.UIButton) -&gt; ()"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/Controller/DrinkDetailController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "3284">
+               </Location>
+               <Location
+                  uuid = "8E3767E1-A307-46B4-8B0B-29F801E8A881 - d1cd8789510dff5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExamenCocktail.DrinkDetailController.btnFavoritos(__C.UIButton) -&gt; ()"
+                  moduleName = "ExamenCocktail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/ExamenCocktail/ExamenCocktail/Controller/DrinkDetailController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "3016">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "345A04A2-1343-49CA-9886-EAE75EC01748"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenCocktail/Controller/GetDrinkController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

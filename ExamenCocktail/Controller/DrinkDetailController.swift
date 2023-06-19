@@ -51,7 +51,7 @@ class DrinkDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        degradado()
         updateUI()
 
     }
@@ -77,6 +77,8 @@ class DrinkDetailController: UIViewController {
         let result = DrinkSqliteViewModel.Add(drink: drink)
                     if result.Correct! == true {
                         //Alert
+                        //rellenado del corzon
+                        
                         let alert = UIAlertController(title: "Mensaje", message: "Se añadio correctamente a Favoritos!", preferredStyle: .alert)
                         let action = UIAlertAction(title: "Aceptar", style: .default)
                         alert.addAction(action)
@@ -95,7 +97,28 @@ class DrinkDetailController: UIViewController {
                 }
     
     
-    
+    func degradado()
+    {
+        // basic setup
+        view.backgroundColor = .white
+        navigationItem.title = "Gradient View"
+
+        // Create a new gradient layer
+        let gradientLayer = CAGradientLayer()
+        // Set the colors and locations for the gradient layer
+        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.lightGray.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+
+        // Set the start and end points for the gradient layer
+        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+
+        // Set the frame to the layer
+        gradientLayer.frame = view.frame
+
+        // Add the gradient layer as a sublayer to the background view
+        view.layer.insertSublayer(gradientLayer, at: 0)
+    }
     
     func updateUI(){
         DrinkViewModel.GetById(IdCoctel: self.IdCoctel) { result, error in
@@ -112,6 +135,8 @@ class DrinkDetailController: UIViewController {
                         self.lblCantidad2.text = self.categoria[0].strMeasure2
                         self.lblCantidad3.text = self.categoria[0].strMeasure3
                         let imageURLString = self.categoria[0].strDrinkThumb
+                        
+                       // self.btnFavoritosOutlet.setImage(UIImage.init(systemName: "heart"), for: .normal)
                         UIImage.loadImageFromURL(imageURLString!) { (image) in
                         if let image = image {
                         // La imagen se cargó exitosamente desde la URL

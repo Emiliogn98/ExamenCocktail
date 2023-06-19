@@ -74,7 +74,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-NJ-606">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="541"/>
-                                        <color key="backgroundColor" red="0.5" green="0.23013489000000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rqu-hp-kEX">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -93,7 +93,7 @@
                                         </cells>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese Nombre o Ingrediente" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ION-Wi-f5t">
                                 <rect key="frame" x="25" y="129" width="285.33333333333331" height="34"/>
@@ -110,7 +110,8 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.5" green="0.23013489000340134" blue="0.092261904761904767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="taN-Wj-qk9" firstAttribute="leading" secondItem="ION-Wi-f5t" secondAttribute="trailing" constant="8" id="4kF-fS-n6c"/>
                             <constraint firstItem="ION-Wi-f5t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="HuU-uq-Gof"/>
@@ -252,7 +253,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fag-6Y-Vlc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="B55-TT-0xR" firstAttribute="top" secondItem="o6J-4t-gHn" secondAttribute="bottom" constant="16" id="1bO-39-5dl"/>
                             <constraint firstItem="B55-TT-0xR" firstAttribute="leading" secondItem="fag-6Y-Vlc" secondAttribute="leading" constant="25" id="1d3-vc-qFf"/>
@@ -328,7 +329,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-L1-mEb">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="541"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ABe-Ux-J8T">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -363,7 +364,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E13-lS-2mC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Mih-7m-LbK" firstAttribute="top" secondItem="NM2-1I-eTh" secondAttribute="bottom" constant="40" id="1wJ-WQ-aw9"/>
                             <constraint firstItem="Mih-7m-LbK" firstAttribute="top" secondItem="Vve-hf-wII" secondAttribute="bottom" constant="40" id="6Zq-e9-WVi"/>
@@ -505,7 +506,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jf5-qR-9tR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Jf5-qR-9tR" firstAttribute="bottom" secondItem="kHa-dH-fa1" secondAttribute="bottom" constant="250" id="1wN-id-9bn"/>
                             <constraint firstItem="Jf5-qR-9tR" firstAttribute="bottom" secondItem="FqO-x5-TCt" secondAttribute="bottom" constant="300" id="2er-XL-yel"/>
@@ -573,11 +574,14 @@
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
         <image name="mug.fill" catalog="system" width="128" height="125"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
