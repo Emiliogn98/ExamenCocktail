@@ -9,8 +9,9 @@ import Foundation
 import SQLite3
 
 public class DBManager {
+    var result = Result()
     
-    let dbPath: String = "DBCocktail.sqlite"
+    let dbPath: String = "Document.DB_Drinks.sqlite"//"DBCocktail.sqlite"
     var db:OpaquePointer?
     
     init()
@@ -23,6 +24,9 @@ public class DBManager {
     
     func Get() -> OpaquePointer?
     {
+        
+       // let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.EAguilarEcommerce")!.appendingPathComponent(path)
+        
         let filePath = try! FileManager.default.url(for:
                 .documentDirectory, in:
                 .userDomainMask, appropriateFor: nil, create: false)
@@ -32,7 +36,7 @@ public class DBManager {
 //                print(filePathCompartido)
               // print(filePath)
         
-        var db: OpaquePointer? = nil
+        //var db: OpaquePointer? = nil
         if sqlite3_open(filePath.path, &db) != SQLITE_OK
         {
             print("fallo la conexion")
@@ -41,6 +45,7 @@ public class DBManager {
         else
         {
             print("conexion existosa el pat: \(filePath)")
+            //result.Correct = true
             return db
         }
     }

@@ -13,9 +13,8 @@ class DrinkSqliteViewModel {
     static func Add(drink : Drinks) -> Result{
             var context = DBManager()
             var result = Result()
-            let query = "INSERT INTO Drinks(strCategory,strDrink,strDrinkThumb,strAlcoholic,strIngredient1,strIngredient2,strIngredient3,strMeasure1,strMeasure2,strMeasure3) VALUES(?,?,?,?,?,?,?,?,?,?)"
-
             var statement: OpaquePointer? = nil
+            let query = "INSERT INTO Drinks(strCategory,strDrink,strDrinkThumb,strAlcoholic,strIngredient1,strIngredient2,strIngredient3,strMeasure1,strMeasure2,strMeasure3) VALUES(?,?,?,?,?,?,?,?,?,?)"
             do{
                 if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK {
 
